@@ -9,5 +9,6 @@ Gem::Specification.new do |s|
   EOF
   s.files = Dir.glob("{test}/**/*") | Dir.glob("{lib}/**/*")
   s.has_rdoc = true
-  s.rubyforge_project = "P4D"
+  spec.add_dependency("httparty", ">= 0.4.4")
+  spec.add_dependency("php-serialize", ">= 1.1.0")
 end
