@@ -5,7 +5,7 @@ class String
   def camelize
     self.to_s.split('_').map {|w| w.capitalize}.join
   end
-  
+
   # Taken straight from Rails' ActiveSupport::Inflector#underscore method
   def decamelize
     self.gsub(/([A-Z]+)([A-Z][a-z])/,'\1_\2').gsub(/([a-z\d])([A-Z])/,'\1_\2').tr("-", "_").downcase
